@@ -21,5 +21,5 @@ class CustomUserManager(BaseUserManager):
     
 
 
-class CustomUser(AbstractUser):
+class User(AbstractUser):
     objects = CustomUserManager()
