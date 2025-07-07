@@ -50,6 +50,12 @@ MIDDLEWARE = [
    # 'myapi.middleware.custom_exception_middleware.CustomExceptionMiddleware',
 ]
 
+
+AUTHENTICATION_BACKENDS = [
+    'myapi.users.backends.UsernameOrEmailBackend',  # custom backend
+    'django.contrib.auth.backends.ModelBackend',  # fallback default
+]
+
 ROOT_URLCONF = 'myapi.urls'
 
 TEMPLATES = [

@@ -1,6 +1,11 @@
--r base.txt
 
-django-debug-toolbar
-django-extensions
-Faker
+
+-r requirements-prod.txt
+
+python-dotenv==1.1.1
+django-debug-toolbar==4.3.0
+ipython
 coverage
+pytest
+pytest-django
+django-extensions
