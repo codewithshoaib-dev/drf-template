@@ -12,8 +12,7 @@ def get_env_setting(setting):
 
 DEBUG = False
 
-
-SECRET_KEY = get_env_setting("DJANGO_SECRET_KEY")
+SECRET_KEY = get_env_setting("SECRET_KEY")
 
 ALLOWED_HOSTS = get_env_setting("DJANGO_ALLOWED_HOSTS").split(",")
 
