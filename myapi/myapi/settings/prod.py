@@ -14,7 +14,7 @@ DEBUG = False
 
 SECRET_KEY = get_env_setting("SECRET_KEY")
 
-ALLOWED_HOSTS = get_env_setting("DJANGO_ALLOWED_HOSTS").split(",")
+ALLOWED_HOSTS = get_env_setting("ALLOWED_HOSTS").split(",")
 
 
 DATABASES = {

@@ -6,8 +6,6 @@ import environ
 
 def main():
     """Run administrative tasks."""
-
-    
     env = environ.Env()
     environ.Env.read_env()
 
